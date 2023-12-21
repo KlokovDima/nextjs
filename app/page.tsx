@@ -1,7 +1,9 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from 'next/image';
+import styles from './page.module.css';
+import {JSX} from "react";
 
-export default function Home() {
+export default function Home(): JSX {
+  const a:number = 100;
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -83,7 +85,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Deploy <span>-&gt;</span>
+            Deploy {a} <span>-&gt;</span>
           </h2>
           <p>
             Instantly deploy your Next.js site to a shareable URL with Vercel.
@@ -91,5 +93,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
