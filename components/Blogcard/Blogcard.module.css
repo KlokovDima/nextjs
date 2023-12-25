@@ -1,0 +1,77 @@
+.blogcard {
+	max-width: 300px;
+	margin: 0 16px;
+
+	padding: 10px;
+
+	border: 1px solid var(--c-border);
+
+	border-radius: 5px;
+	background: var(--c-white);
+}
+
+.img {
+	width: 100%;
+	height: auto;
+}
+
+.text {
+	color: var(--c-black-20);
+
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+}
+
+.title {
+	color: var(--c-black);
+
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.headerInfo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.bottomInfo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.publishedAgo,
+.timeRead,
+.tag {
+	color: var(--c-black-20);
+
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.publishedAgo {
+	margin-left: 6px;
+}
+
+.link {
+	display: flex;
+	align-items: center;
+
+	text-align: right;
+
+	color: var(--c-primary);
+
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.shortInfo {
+	display: flex;
+	align-items: center;
+}
+
+.linkText {
+	display: inline-block;
+}

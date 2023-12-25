@@ -1,0 +1,13 @@
+.like {
+	display: flex;
+	align-items: center;
+
+	color: var(--c-black-20);
+
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.img {
+	margin-left: 5px;
+}
