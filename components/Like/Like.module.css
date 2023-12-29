@@ -3,6 +3,7 @@
 	align-items: center;
 
 	color: var(--c-black-20);
+	cursor: pointer;
 
 	font-size: 12px;
 	font-weight: 400;
@@ -10,4 +11,31 @@
 
 .img {
 	margin-left: 5px;
+}
+
+.likeDetail {
+	cursor: pointer;
+
+	border-radius: 40px;
+	border: 1px solid #303030;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 48px;
+	width: 48px;
+}
+
+.likeDetail:hover,
+.liked {
+	background: #303030;
+}
+
+.likeDetail:hover path {
+	stroke: var(--c-white);
+}
+
+.liked path {
+	stroke: var(--c-white);
 }

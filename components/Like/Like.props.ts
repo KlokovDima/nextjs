@@ -1,7 +1,6 @@
-import {DetailedHTMLProps, HTMLAttributes, ReactNode} from "react";
+import {DetailedHTMLProps, HTMLAttributes} from "react";
 
 
-export interface LikeProps extends DetailedHTMLProps<HTMLAttributes<HTMLHeadElement>, HTMLHeadElement> {
-    children: ReactNode,
-    tag: 'h1' | 'h2' | 'h3'
+export interface LikeProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
+    display: 'detail' | 'list',
 }

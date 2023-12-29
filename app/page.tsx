@@ -1,11 +1,23 @@
+'use client';
+
 import styles from './page.module.css';
 import {JSX} from "react";
-import {Blogcard} from "@/components";
+import {Blogcard, Like} from "@/components";
 
 export default function Home(): JSX {
-  return (
-    <main className={styles.main}>
-        <Blogcard></Blogcard>
-    </main>
-  );
+
+    const postId = 2;
+
+    const fnLiked = (postId) => {
+        fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
+            .then(response => response.json())
+            .then(json => console.log(json))
+    };
+
+    return (
+        <main className={styles.main}>
+            <Blogcard></Blogcard>
+            <Like display="detail" fnLiked={fnLiked} postId={postId}/>
+        </main>
+    );
 }
