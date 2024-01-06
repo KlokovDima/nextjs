@@ -11,13 +11,19 @@ export default function Home(): JSX {
     const fnLiked = (postId) => {
         fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
             .then(response => response.json())
-            .then(json => console.log(json))
+            .then(json => console.log(json));
     };
+
+    const arr = new Array(12).fill().map(() => Math.floor(Math.random() * 100));
+
+    console.log(arr);
 
     return (
         <main className={styles.main}>
-            <Blogcard></Blogcard>
-            <Like display="detail" fnLiked={fnLiked} postId={postId}/>
+            <div className={styles.blogs}>
+                {arr.map((item) => <Blogcard key={item}></Blogcard>)}
+            </div>
+            {/*<Like display="detail" fnLiked={fnLiked} postId={postId}/>*/}
         </main>
     );
 }

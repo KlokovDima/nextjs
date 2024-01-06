@@ -1,7 +1,4 @@
 .blogcard {
-	max-width: 300px;
-	margin: 0 16px;
-
 	padding: 10px;
 
 	border: 1px solid var(--c-border);
