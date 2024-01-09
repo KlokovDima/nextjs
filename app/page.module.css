@@ -1,4 +1,32 @@
 .main {
-	display: flex;
-	align-items: center;
+}
+
+.blogs {
+	display: grid;
+
+	grid-template-columns: 300px 300px 300px 300px;
+	gap: 16px;
+
+	justify-content: center;
+
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1365px) {
+	.blogs {
+		grid-template-columns: 300px 300px 300px;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.blogs {
+		grid-template-columns: 300px 300px;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	.blogs {
+		grid-template-columns: 300px;
+	}
 }
